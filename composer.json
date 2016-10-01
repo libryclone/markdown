@@ -10,7 +10,7 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/legierski/laravel-framework-4.2-php7"
+            "url": "https://github.com/monero-project/framework"
         }
     ],
     "authors": [
@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "dev-4.2.19-php7",
+        "laravel/framework": "dev-4.2",
         "michelf/php-markdown": "dev-lib"
     },
     "require-dev": {
