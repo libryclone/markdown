@@ -3,6 +3,12 @@
     "description": "Markdown compiler for Laravel 4",
     "keywords": ["laravel", "md", "markdown", "illuminate"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/monero-project/php-markdown"
+        }
+    ],
     "authors": [
         {
             "name": "Vincent Talbot",
@@ -11,7 +17,7 @@
     ],
     "require": {
         "laravel/framework": "~5.0",
-        "michelf/php-markdown": "1.5.x"
+        "michelf/php-markdown": "dev-lib"
     },
     "require-dev": {
         "mockery/mockery": "0.9.0"
