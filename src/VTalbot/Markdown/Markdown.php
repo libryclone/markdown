@@ -3,7 +3,7 @@
 namespace Vtalbot\Markdown;
 
 use Illuminate\View\Engines\EngineInterface;
-use Illuminate\Contracts\Support\Renderable as Renderable;
+use Illuminate\Support\Contracts\RenderableInterface as Renderable;
 
 class Markdown implements Renderable {
 

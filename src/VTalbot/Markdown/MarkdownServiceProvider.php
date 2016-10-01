@@ -41,11 +41,11 @@ class MarkdownServiceProvider extends ServiceProvider {
      */
     public function registerRoutes()
     {
-        if (Config::get('markdown.add_routes'))
+        if (Config::get('markdown::add_routes'))
         {
-            foreach (Config::get('markdown.routes') as $routes)
+            foreach (Config::get('markdown::routes') as $routes)
             {
-                foreach (Config::get('markdown.extensions') as $ext)
+                foreach (Config::get('markdown::extensions') as $ext)
                 {
                     Route::get($routes.'{file}.'.$ext, function($file) use ($routes)
                         {
@@ -96,7 +96,7 @@ class MarkdownServiceProvider extends ServiceProvider {
 
                 $compiler = new MarkdownCompiler($app['files'], $cache);
 
-                $compiler->setOptions(Config::get('markdown.options'));
+                $compiler->setOptions(Config::get('markdown::options'));
 
                 return new CompilerEngine($compiler, $app['files']);
             });
@@ -111,7 +111,7 @@ class MarkdownServiceProvider extends ServiceProvider {
     {
         $this->app['markdown.finder'] = $this->app->share(function($app)
             {
-                $paths = Config::get('markdown.paths');
+                $paths = Config::get('markdown::paths');
 
                 foreach ($paths as $key => $path)
                 {

@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "~5.0",
+        "laravel/framework": "~4",
         "michelf/php-markdown": "dev-lib"
     },
     "require-dev": {
