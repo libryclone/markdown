@@ -7,6 +7,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/monero-project/php-markdown"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/legierski/laravel-framework-4.2-php7"
         }
     ],
     "authors": [
@@ -16,7 +20,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "~4",
+        "laravel/framework": "dev-4.2.19-php7",
         "michelf/php-markdown": "dev-lib"
     },
     "require-dev": {
